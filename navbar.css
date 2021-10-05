@@ -1,0 +1,73 @@
+body {
+	font-family: Arial, Helvtical, Sans-serif;
+	font-size:16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+	margin:0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background: #35424a;
+	color: #fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	display: inline;
+	float: left;
+	padding: 0 20px 0 20px;
+	transition: .5s;
+}
+
+header #brand-name {
+	float: left;
+}
+
+header #brand-name h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #ccc;
+	transition: .5s;
+}
+
+@media (max-width: 800px) {
+	header #brand-name,
+	header nav,
+	header nav li {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+}
